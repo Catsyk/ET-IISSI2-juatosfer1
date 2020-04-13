@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<!--
+    Versión 2 de la lista de la compra OOP. Esta versión permite manejar dos listas, 
+    una lista con los elementos que se desea comprar y otra lista con los elementos
+    que se han comprado. Se permite pasar elementos de una lista a otra.
+-->
+
+<head>
+    <meta charset="utf8">
+    <title>juatosfer1</title>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/MyList.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="bg-dark">
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-body text-center">
+                    <h3 class="card-title border-bottom">Lista de la compra</h3>
+                </div>
+                <div class="card-body text-center p-0">
+                    <input id="itemToAdd" type="text" placeholder="Ej: manzanas, peras..."/>
+                    <button id="addBtn" class="btn btn-danger" disabled="disabled">Añadir</button>
+                </div>
+                
+            </div>
+
+            <div class="card-block">
+                <div class="row">
+                    <div class="col m-3">
+                        <h4>Necesito</h4>
+                        <ul id="shoppingList" class="list-group list-group-flush">
+                            <!--Items will be added here -->
+                            <li id="me" class="list-group-item list-group-item-secondary">juatosfer1</li>
+                        </ul>
+                    </div>
+                    <div class="col m-3">
+                        <h4>Comprados</h4>
+                        <ul id="removedList" class="list-group list-group-flush">
+                            <!--Removed items will be added here -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
